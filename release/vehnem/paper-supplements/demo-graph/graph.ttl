@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix wkd:  <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-sytnax-ns#> .
+
+dbo:Ora_Lassila 
+	rdf:type   dbo:Engineer ;
+	foaf:name  "Ora Lassila"@en ;
+	foaf:knows wkd:Q6135847 , 
+		   [ foaf:name "Tim Berners-Lee"@en ; rdf:type foaf:Person ] .
+
+wkd:Q6135847 
+	rdfs:label "Jim Hendler"@en .
+
+dbo:Engineer 
+	rdfs:subClassOf foaf:Person .
+
+foaf:knows
+	rdfs:domain foaf:Person ;
+	rdfs:range  foaf:Person .

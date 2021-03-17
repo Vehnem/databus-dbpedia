@@ -1,0 +1,71 @@
+[
+   {
+      "@id" : "_:b0",
+      "http://www.w3.org/1999/02/22-rdf-sytnax-ns#type" : [
+         {
+            "@id" : "http://xmlns.com/foaf/0.1/Person"
+         }
+      ],
+      "http://xmlns.com/foaf/0.1/name" : [
+         {
+            "@language" : "en",
+            "@value" : "Tim Berners-Lee"
+         }
+      ]
+   },
+   {
+      "@id" : "http://dbpedia.org/ontology/Engineer",
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+         {
+            "@id" : "http://xmlns.com/foaf/0.1/Person"
+         }
+      ]
+   },
+   {
+      "@id" : "http://dbpedia.org/ontology/Ora_Lassila",
+      "http://www.w3.org/1999/02/22-rdf-sytnax-ns#type" : [
+         {
+            "@id" : "http://dbpedia.org/ontology/Engineer"
+         }
+      ],
+      "http://xmlns.com/foaf/0.1/knows" : [
+         {
+            "@id" : "http://www.wikidata.org/entity/Q6135847"
+         },
+         {
+            "@id" : "_:b0"
+         }
+      ],
+      "http://xmlns.com/foaf/0.1/name" : [
+         {
+            "@language" : "en",
+            "@value" : "Ora Lassila"
+         }
+      ]
+   },
+   {
+      "@id" : "http://www.wikidata.org/entity/Q6135847",
+      "http://www.w3.org/2000/01/rdf-schema#label" : [
+         {
+            "@language" : "en",
+            "@value" : "Jim Hendler"
+         }
+      ]
+   },
+   {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+   },
+   {
+      "@id" : "http://xmlns.com/foaf/0.1/knows",
+      "http://www.w3.org/2000/01/rdf-schema#domain" : [
+         {
+            "@id" : "http://xmlns.com/foaf/0.1/Person"
+         }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range" : [
+         {
+            "@id" : "http://xmlns.com/foaf/0.1/Person"
+         }
+      ]
+   }
+]

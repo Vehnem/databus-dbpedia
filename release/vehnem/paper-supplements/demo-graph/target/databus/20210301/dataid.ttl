@@ -1,0 +1,174 @@
+
+
+######
+#     #   ##   #####   ##   #####  #    #  ####
+#     #  #  #    #    #  #  #    # #    # #
+#     # #    #   #   #    # #####  #    #  ####
+#     # ######   #   ###### #    # #    #      #
+#     # #    #   #   #    # #    # #    # #    #
+######  #    #   #   #    # #####   ####   ####
+
+# Plugin version 1.3-SNAPSHOT - https://github.com/dbpedia/databus-maven-plugin
+
+
+@prefix dataid-mt: <http://dataid.dbpedia.org/ns/mt#> .
+@prefix databus: <https://databus.dbpedia.org/> .
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dataid-cv: <http://dataid.dbpedia.org/ns/cv#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dataid-debug: <http://dataid.dbpedia.org/ns/debug.ttl#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+<>      a                       dataid:DataId ;
+        rdfs:comment            "Metadata created by the DBpedia Databus Maven Plugin: https://github.com/dbpedia/databus-maven-plugin (Version 1.3-SNAPSHOT)\nThe DataID ontology is a metadata omnibus, which can be extended to be interoperable with all metadata formats\nNote that the metadata (the dataid.ttl file) is always CC-0, the files are licensed individually\nMetadata created by https://vehnem.github.io/webid.ttl#me" ;
+        rdfs:label              "DataID metadata for paper-supplements/demo-graph"@en ;
+        dataid:associatedAgent  <https://vehnem.github.io/webid.ttl#me> ;
+        dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion          "1.3-SNAPSHOT" ;
+        dct:issued              "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license             <http://purl.oclc.org/NET/rdflicense/cc-zero1.0> ;
+        dct:publisher           <https://vehnem.github.io/webid.ttl#me> ;
+        dct:title               "DataID metadata for paper-supplements/demo-graph"@en .
+
+dataid-mt:ApplicationRDFXML
+        a                dataid-mt:MediaType ;
+        dataid:mimetype  "application/rdf+xml" .
+
+<https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph>
+        a       dataid:Artifact .
+
+<#demo-graph.png>  a             dataid:SingleFile ;
+        dataid:associatedAgent   <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:compression       "None" ;
+        dataid:file              <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301/demo-graph.png> ;
+        dataid:formatExtension   "" ;
+        dataid:isDistributionOf  <#Dataset> ;
+        dataid:maintainer        <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:preview           "[binary data - no preview]" ;
+        dataid:sha256sum         "1a2de53e299ced48bb8a106c6dc1c1d83aa31773f7d368902f1d7fb297a6167a" ;
+        dataid:signature         "SZC2g96a10JzdCFDqBkhY52ZBgcIAgXS3wsff8AFuKdvs28CwuoliKMS3yNXwxGN5zz7iQd6Cbj3uxd1NCU1xE+h+cXfJW43CzSqHQYMwJthd9NhQWhGS9aFMVppI6gal6z4NfbDbsv7XZxBtUzIaZnKaLgexchIyNmbI5WsUDbxhW4e4Wnqa2eJSjIiuZjOsySGbsINXTqFv5fYjk/j9urOmOk6KMhgjxinjObRiCNYfpvfaSMT9v/G1h0W4WjRbAPkWhNECaJoo0Lqi/mJvJAAEyiTP05GIGB2dwRyLJjwg2nKDS3OxT1smYltG6ATaBrFgSA+h2LLkF9pbMz+bg==" ;
+        dct:conformsTo           "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion           "20210301" ;
+        dct:issued               "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license              <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified             "2021-03-17T10:54:34Z"^^xsd:dateTime ;
+        dct:publisher            <https://vehnem.github.io/webid.ttl#me> ;
+        dcat:byteSize            "85231"^^xsd:decimal ;
+        dcat:downloadURL         <demo-graph.png> ;
+        dcat:mediaType           dataid-mt:UNKNOWN .
+
+<#demo-graph.rdf>  a             dataid:SingleFile ;
+        dataid:associatedAgent   <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:compression       "None" ;
+        dataid:file              <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301/demo-graph.rdf> ;
+        dataid:formatExtension   "rdf" ;
+        dataid:isDistributionOf  <#Dataset> ;
+        dataid:maintainer        <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:preview           "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dbo=\"http://dbpedia.org/ontology/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:wkd=\"http://www.wikidata.org/entity/\">\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <foaf:name xml:lang=\"en\">Tim Berners-Lee</foaf:name>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://dbpedia.org/ontology/Ora_Lassila\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://dbpedia.org/ontology/Engineer\"/>" ;
+        dataid:sha256sum         "687df6d5b12f72ccbb6121c09ad13deabf738fdb6e7916141f849bce8c93eeee" ;
+        dataid:signature         "F5LSSxTlFk7FqAcNS/8oDuzhSR09KC8S0A2P4RoBwS2KNeiksVffG3z4rDo/K9wCg4g8MXTScYSd8HGwXkh/thcr821EkShrZL5rW+JfGtouTx0/fy5dzwk570L++0vg6eq1oUG3Yp5/woB9AwS27othJ2io9ZM6Y1ppfvh4c2AqHg8xEQIyM/Y+LtUhsL5oknchWJFhEYkenn5YAC3oSJdpYTvnO5XAISjb5f/Ym5w/eMMFb/qiEGC1EmQP2MzJLjuzF3uE5fa3HT2Uo/dqdNLCqAHYuUSc3OpL4CqAh42swW7/Tscqy+qUQmby5mB5kIGJzheHCavHwynN4kTkGA==" ;
+        dct:conformsTo           "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion           "20210301" ;
+        dct:issued               "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license              <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified             "2021-03-17T10:54:33Z"^^xsd:dateTime ;
+        dct:publisher            <https://vehnem.github.io/webid.ttl#me> ;
+        dcat:byteSize            "1863"^^xsd:decimal ;
+        dcat:downloadURL         <demo-graph.rdf> ;
+        dcat:mediaType           dataid-mt:ApplicationRDFXML .
+
+dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
+        dataid:mimetype  "UNKNOWN" .
+
+<#Dataset>  a                   dataid:Dataset ;
+        rdfs:comment            "Databus-Mods Demo Resources (Graph)"@en ;
+        rdfs:label              "Databus-Mods Demo Resources (Graph)"@en ;
+        dataid:account          databus:vehnem ;
+        dataid:artifact         <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph> ;
+        dataid:associatedAgent  <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:group            <https://databus.dbpedia.org/vehnem/paper-supplements> ;
+        dataid:groupdocu        "" ;
+        dataid:maintainer       <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:version          <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301> ;
+        dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
+        dct:description         "" ;
+        dct:hasVersion          "20210301" ;
+        dct:issued              "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license             <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:publisher           <https://vehnem.github.io/webid.ttl#me> ;
+        dct:title               "Databus-Mods Demo Resources (Graph)"@en ;
+        dcat:distribution       <#demo-graph.nt> , <#demo-graph.jsonld> , <#demo-graph.png> , <#demo-graph.ttl> , <#demo-graph.rdf> .
+
+<#demo-graph.nt>  a              dataid:SingleFile ;
+        dataid:associatedAgent   <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:compression       "None" ;
+        dataid:file              <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301/demo-graph.nt> ;
+        dataid:formatExtension   "nt" ;
+        dataid:isDistributionOf  <#Dataset> ;
+        dataid:maintainer        <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:preview           "_:genid1 <http://xmlns.com/foaf/0.1/name> \"Tim Berners-Lee\"@en .\n_:genid1 <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://dbpedia.org/ontology/Engineer> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/name> \"Ora Lassila\"@en .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> <http://www.wikidata.org/entity/Q6135847> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> _:genid1 .\n<http://www.wikidata.org/entity/Q6135847> <http://www.w3.org/2000/01/rdf-schema#label> \"Jim Hendler\"@en .\n<http://dbpedia.org/ontology/Engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> ." ;
+        dataid:sha256sum         "041677a6c3f1000ee21b8346edba7eb53c678fd65691f0af62e4f06d74f2ce8b" ;
+        dataid:signature         "oisKTfDTHv62d9NqHx8kH8ad/qt4BbLB0Lar8wGvLD7bNO180YOSFsRaXL970kdUH8B+TjE65WjXiD5aNEbnPtgq1rWzYjLLKBSGti7jXAu2uFAt7D3vnD3Rit33U/P2umxxeAjtDyXM4y8EnaXIDDnLKEioWYe7NUjbD2eaBlV6jSwfbPYJR9UGWKQNYqmtCGlNRHOjY5FvV4GOMa/PY2jSYYFvU8u9Gcwp+nuabxSElYCJxrgq66W6GxOjAudRhZiiOiZMoN/eROcuAtKXSNHl5d+xKa2dGFWji50VUHCUGsdtybVd/LdXOyyhhZkjx9Rf8E5cxUNGqz7bDG5Xhg==" ;
+        dct:conformsTo           "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion           "20210301" ;
+        dct:issued               "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license              <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified             "2021-03-17T10:54:33Z"^^xsd:dateTime ;
+        dct:publisher            <https://vehnem.github.io/webid.ttl#me> ;
+        dcat:byteSize            "1060"^^xsd:decimal ;
+        dcat:downloadURL         <demo-graph.nt> ;
+        dcat:mediaType           dataid-mt:ApplicationNTriples .
+
+<https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301>
+        a       dataid:Version .
+
+<#demo-graph.jsonld>  a          dataid:SingleFile ;
+        dataid:associatedAgent   <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:compression       "None" ;
+        dataid:file              <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301/demo-graph.jsonld> ;
+        dataid:formatExtension   "" ;
+        dataid:isDistributionOf  <#Dataset> ;
+        dataid:maintainer        <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:preview           "[\n   {\n      \"@id\" : \"_:b0\",\n      \"http://www.w3.org/1999/02/22-rdf-sytnax-ns#type\" : [\n         {\n            \"@id\" : \"http://xmlns.com/foaf/0.1/Person\"\n         }\n      ],\n      \"http://xmlns.com/foaf/0.1/name\" : [\n         {" ;
+        dataid:sha256sum         "c520b112ed44c6ecc36e4e8748d9d30bfa334e03b65dd471180916162bd9599f" ;
+        dataid:signature         "x7QsWzfhGfEWd/wtfS3z8gkbKY2zM2BGE7Mx6Oj3gquBCUCYTDG7cN5MGq/0r1BiRlH134K+l8krJPfOiJKGYriCI6Oa69PctTIrjD6uDMbATn4dvl6tW0/A8o+M3vOn9+z1j9thehAAlIoCzA21fTMIKD6rE8nT+fR0GYm/wOXFjRpUNtYUoaBSlL10O9y6xoyJfbDbX7ciW9Gnbj4UYObeQ22RU8diEOLm5xRzaxHtckm/4tV/Z6ZHo1UBJQrWxOem7r6hzvfeY20G2V2d3S2+bqJCax6JU6h8zATNfIfZfqrTIUPQydMIj59f+VQMj8y2pzDYABO6XNHX3SSRaA==" ;
+        dct:conformsTo           "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion           "20210301" ;
+        dct:issued               "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license              <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified             "2021-03-17T10:54:33Z"^^xsd:dateTime ;
+        dct:publisher            <https://vehnem.github.io/webid.ttl#me> ;
+        dcat:byteSize            "1709"^^xsd:decimal ;
+        dcat:downloadURL         <demo-graph.jsonld> ;
+        dcat:mediaType           dataid-mt:UNKNOWN .
+
+dataid-mt:ApplicationNTriples
+        a                dataid-mt:MediaType ;
+        dataid:mimetype  "application/n-triples" .
+
+<https://databus.dbpedia.org/vehnem/paper-supplements>
+        a       dataid:Group .
+
+<#demo-graph.ttl>  a             dataid:SingleFile ;
+        dataid:associatedAgent   <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:compression       "None" ;
+        dataid:file              <https://databus.dbpedia.org/vehnem/paper-supplements/demo-graph/20210301/demo-graph.ttl> ;
+        dataid:formatExtension   "ttl" ;
+        dataid:isDistributionOf  <#Dataset> ;
+        dataid:maintainer        <https://vehnem.github.io/webid.ttl#me> ;
+        dataid:preview           "@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix dbo:  <http://dbpedia.org/ontology/> .\n@prefix wkd:  <http://www.wikidata.org/entity/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-sytnax-ns#> .\n\ndbo:Ora_Lassila \n\trdf:type   dbo:Engineer ;\n\tfoaf:name  \"Ora Lassila\"@en ;\n\tfoaf:knows wkd:Q6135847 , " ;
+        dataid:sha256sum         "8f2930b1c3f2b31728a9197a2742dca972ef95eaf1f41a8cb158dda86cf89bb8" ;
+        dataid:signature         "GyT9fHj3wP8oL5CoZYE86zbqt4Fx4zGd9ijavbfehcqPMV0fE9e7W0HSB70QuvPkbP/3CVTdCbs0Hcx04YMW+WrHimGU8rMJU343ggS22VP7L2IdjIN3wL+EWxFrT5ctFrM5CFqizYyFSGj08ZI/M4uqvz0f35ivyBqInUjGA0CkMcyAHE2zq4iP+v731VTWz3smwBi+dYuz6XRVTlrL66XhF30HC3uQPycQEo/rFHmJ7gfHZcRG320lNHqtqFauSWld9WRr3VUVNZDH45vNYGN9cyZRtb3PJTaEhHPjJjbRUnTOn2LsqxSGPaV+kthiazs0qNkZBciaLWLBxE+4kw==" ;
+        dct:conformsTo           "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion           "20210301" ;
+        dct:issued               "2021-03-17T11:19:15Z"^^xsd:dateTime ;
+        dct:license              <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
+        dct:modified             "2021-03-17T10:54:33Z"^^xsd:dateTime ;
+        dct:publisher            <https://vehnem.github.io/webid.ttl#me> ;
+        dcat:byteSize            "587"^^xsd:decimal ;
+        dcat:downloadURL         <demo-graph.ttl> ;
+        dcat:mediaType           dataid-mt:ApplicationNTriples .

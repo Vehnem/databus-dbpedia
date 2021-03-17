@@ -1,0 +1,10 @@
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Tim Berners-Lee"@en .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/ontology/Ora_Lassila> <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://dbpedia.org/ontology/Engineer> .
+<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/name> "Ora Lassila"@en .
+<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> <http://www.wikidata.org/entity/Q6135847> .
+<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> _:genid1 .
+<http://www.wikidata.org/entity/Q6135847> <http://www.w3.org/2000/01/rdf-schema#label> "Jim Hendler"@en .
+<http://dbpedia.org/ontology/Engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .

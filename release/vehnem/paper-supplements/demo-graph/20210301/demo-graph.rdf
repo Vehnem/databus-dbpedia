@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dbo="http://dbpedia.org/ontology/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:wkd="http://www.wikidata.org/entity/">
+  <rdf:Description rdf:nodeID="genid1">
+    <foaf:name xml:lang="en">Tim Berners-Lee</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-sytnax-ns#" rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Ora_Lassila">
+    <ns0:type xmlns:ns0="http://www.w3.org/1999/02/22-rdf-sytnax-ns#" rdf:resource="http://dbpedia.org/ontology/Engineer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Ora_Lassila">
+    <foaf:name xml:lang="en">Ora Lassila</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Ora_Lassila">
+    <foaf:knows rdf:resource="http://www.wikidata.org/entity/Q6135847"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Ora_Lassila">
+    <foaf:knows rdf:nodeID="genid1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.wikidata.org/entity/Q6135847">
+    <rdfs:label xml:lang="en">Jim Hendler</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Engineer">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/knows">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/knows">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+</rdf:RDF>
